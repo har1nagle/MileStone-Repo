@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PWSkillS - Blog App</title>
+        <!-- adding css -->
+        <link rel="stylesheet" href="./style.css">
+    
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav class="flex">
+            <div class="logo">
+            <span>PWSkills Blog</span> 
+            </div>
+            <div class="add-blog-btn" id="add-blog-btn">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="back-btn" id="back-btn" style="display: none;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+        </nav>
+
+        <!-- blog section -->
+        <section id="blog-container" class="flex">
+        </section>
+
+        <!-- add blog section -->
+        <section id="overlay">
+        <div class="add-blog-section flex">
+            <header class="flex">
+                <span id="close-blog-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </header>
+
+            <form class="flex">
+                <input type="text" id="post-url" placeholder="Enter Blog Post URL: ">
+                <input type="text" id="blog-title" placeholder="Enter Blog Title: ">
+                <input type="text" id="blog-desc" placeholder="Enter Blog Description: ">
+                <textarea name="blog" id="main-blog" cols="30" rows="10" placeholder="Write.."></textarea>
+                <button id="create-blog-btn">Add Blog</button>
+            </form>
+        </div>
+        </section> 
+
+    
+        <!-- adding javascript -->
+        <script defer src="./script.js"></script>
+        <!-- adding font awesome cdn -->
+        <script src="https://kit.fontawesome.com/435636f3a2.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>
